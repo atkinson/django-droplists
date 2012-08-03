@@ -1,0 +1,12 @@
+# Choose your databses adapter
+psycopg2
+#MySQL-python
+
+# Use Jinja2 for templates instead of django's templating system
+# Jinja2
+
+# for bcrypt passwords
+py-bcrypt
+
+# Imaging
+PIL

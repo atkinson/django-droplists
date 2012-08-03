@@ -1,0 +1,57 @@
+# Install everything that needs to be compiled
+-r compiled.txt
+
+# Django stuff
+# Install django directly from the repository for now
+-e git://github.com/django/django#egg=django
+#-e git://github.com/django/django@1.4.X#egg=django
+
+# Templates
+django_compressor
+Markdown
+
+# Security
+bleach
+#cef
+django-guardian
+
+# Logging
+#raven
+
+# Celery: Message queue
+#celery
+#django-celery
+
+# L10n/i18n
+#Babel
+#-e git://github.com/clouserw/tower.git#egg=tower
+
+# Caching
+# python-memcached
+
+# Admin
+django-debug-toolbar
+# There are useful panels for debug-toolbar, but have not quite been updated yet for 1.4
+#-e git://github.com/playfire/django-debug-toolbar-user-panel#egg=django_debug_toolbar_user_panel-dev
+#-e git://github.com/ross/memcache-debug-panel#egg=memcache_toolbar-dev
+
+# Migrations
+-e hg+https://bitbucket.org/andrewgodwin/south#egg=South-tip
+
+
+# Admintools
+django-admin-tools
+
+
+# Various tidbits
+-e git://github.com/jsocol/commonware.git#egg=commonware
+-e git://github.com/mozilla/nuggets.git#egg=nuggets
+pytz
+feedparser
+-e git://github.com/themartorana/python-postmark.git#egg=python_postmark-dev
+
+
+# Bootstrappiness
+-e git://github.com/tzangms/django-bootstrap-form.git#egg=django_bootstrap_form
+
+-e git://github.com/piran/bootstrap-breadcrumbs.git#egg=bootstrap_breadcrumbs
